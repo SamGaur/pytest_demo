@@ -12,4 +12,10 @@ def test2_lambdatest_ecommerce():
     driver.get("https://ecommerce-playground.lambdatest.io/")
     print("Title ", driver.title)
 
+def google_test():
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.get("https://google.com/")
+    print("Intended Fail Test")
+    
 
