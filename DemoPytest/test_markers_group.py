@@ -1,8 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import pytest
 
 
-
+@pytest.mark.integration
+@pytest.mark.smoke
 def test_ajax_form_submit():
     driver = webdriver.Chrome()
     driver.maximize_window()
@@ -18,11 +20,11 @@ def test_ajax_form_submit():
 def test_e2e():
     print("End to End Test")
 
-
+@pytest.mark.smoke
 def test_login():
     print("Login to application.")
 
-
+@pytest.mark.smoke
 def test_logout():
     print("Logout")
 
