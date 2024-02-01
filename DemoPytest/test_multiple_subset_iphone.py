@@ -3,7 +3,6 @@ import pytest
 from selenium.webdriver.common.by import By
 
 
-
 def test_find_iphone():
     driver = webdriver.Chrome()
     driver.maximize_window()
@@ -14,6 +13,3 @@ def test_find_iphone():
 
     search_value = driver.find_element(By.XPATH, "//h1[contains(text(),'Search')]").text
     assert "Search - iphone" in search_value
-
-
-
